@@ -42,7 +42,7 @@
               <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#myModal">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#myModal0">Registrar</a>
+              <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#myModal2">Registrar</a>
             </li>
           </ul>
         </div>
@@ -55,12 +55,12 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title text-center">LOGIN</h4>
+              <h4 class="modal-title text-center">Login</h4>
             </div>
             <div class="modal-body">
               <div class="container login-form">
                 <div class="form-group">
-                  <input type="email" id="email" class="form-control"/>
+                  <input type="text" id="username" class="form-control"/>
                 </div>
                 <div class="form-group">
                   <input type="password" id="password" class="form-control"/>
@@ -74,6 +74,70 @@
           </div>
       </div>
   </div> <!-- FIN MODAL LOGIN -->
+   <!-- Modal registrar-->
+  <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title text-center">REGISTRAR</h4>
+            </div>
+            <div class="modal-body">
+              <div class="container login-form">
+                <div class="form-group">
+                  <input type="text" id="cedula" class="form-control" placeholder="cedula"/>
+                </div>
+                <div class="form-group">
+                  <input type="password" id="Nombre" class="form-control" placeholder="nombre"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="Apellido" class="form-control" placeholder="apellido"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="nacionalidad" class="form-control" placeholder="nacionalidad"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="Identificacion" class="form-control" placeholder="Tipo de Identificacion"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="nacimiento" class="form-control" placeholder="Fecha Nacimiento"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="genero" class="form-control" placeholder="Genero"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="telefono" class="form-control" placeholder="telefono"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="usuario" class="form-control" placeholder="Nombre Usuario"/>
+                </div>
+                <div class="form-group">
+                  <input type="password" id="contrasena" class="form-control" placeholder="contrasena"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="edad" class="form-control" placeholder="edad"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="referencia" class="form-control" placeholder="Nombre Referencia"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="telreferencia" class="form-control" placeholder="Tel Referencia"/>
+                </div>
+               <div class="form-group">
+                  <input type="text" id="tipocliente" class="form-control" placeholder="Tipo Cliente"/>
+                </div>
+                <div class="form-group">
+                  <input type="file" id="image" class="form-control"/>
+                </div>
+                <button class="btn btn-succes" id="registrar">REGISTRAR</button>
+              </div> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+      </div>
+  </div> <!-- FIN MODAL registrar -->
     <!-- Header -->
     <header class="masthead">
       <div class="container">
@@ -559,8 +623,11 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/logicaInterfazRegistrar.js"></script>
+    <script type="text/javascript" src="js/logicaNegociosRegistrar.js"></script>
     <script type="text/javascript" src="js/LogicaInterfazLogin.js"></script>
     <script type="text/javascript" src="js/logicaNegociosLogin.js"></script>
+      <script type="text/javascript" src="js/logicaNegociosRegistrar.js"></script>
 
 
     <!-- Plugin JavaScript -->

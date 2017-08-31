@@ -1,14 +1,14 @@
 document.querySelector("#ingresar").addEventListener("click", iniciarSesion);
 
 function iniciarSesion() {
-  var ncorreo ="";
+  var nusuario ="";
   var ncontrasena = "";
   var bAcceso = false;
   
-  var scorreo = document.querySelector("#email").value;
+  var susuario = document.querySelector("#username").value;
   var scontrasena = document.querySelector("#password").value;
 
-  bAcceso = ValidarCredenciales(scorreo,scontrasena);
+  bAcceso = ValidarCredenciales(susuario,scontrasena);
   
   if(bAcceso == true){
      ingresar();
@@ -21,11 +21,11 @@ function ingresar(){
   var rol = sessionStorage.getItem("rolUsuarioActivo");
   
   switch(rol){
-    case "entrenador":
+    case "Entrenador":
       window.location.href = "admin.html";
     break;
 
-    case "cliente":
+    case "Cliente":
       window.location.href = "cliente.html";
     break;
   }
