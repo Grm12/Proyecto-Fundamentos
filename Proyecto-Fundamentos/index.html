@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nombre Gimnasio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img\Health Company.png"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#myModal">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#myModal2">Registrar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal Login-->
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title text-center">Login</h4>
+            </div>
+            <div class="modal-body">
+              <div class="container login-form">
+                <div class="form-group">
+                  <input type="text" id="username" class="form-control"/>
+                </div>
+                <div class="form-group">
+                  <input type="password" id="password" class="form-control"/>
+                </div>
+                <button class="btn btn-succes" id="ingresar">Login</button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+      </div>
+  </div> <!-- FIN MODAL LOGIN -->
+   <!-- Modal registrar-->
+  <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title text-center">REGISTRAR</h4>
+            </div>
+            <div class="modal-body">
+              <div class="container login-form">
+                <div class="form-group">
+                  <input type="text" id="cedula" class="form-control" placeholder="cedula"/>
+                </div>
+                <div class="form-group">
+                  <input type="password" id="Nombre" class="form-control" placeholder="nombre"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="Apellido" class="form-control" placeholder="apellido"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="nacionalidad" class="form-control" placeholder="nacionalidad"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="Identificacion" class="form-control" placeholder="Tipo de Identificacion"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="nacimiento" class="form-control" placeholder="Fecha Nacimiento"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="genero" class="form-control" placeholder="Genero"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="telefono" class="form-control" placeholder="telefono"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="usuario" class="form-control" placeholder="Nombre Usuario"/>
+                </div>
+                <div class="form-group">
+                  <input type="password" id="contrasena" class="form-control" placeholder="contrasena"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="edad" class="form-control" placeholder="edad"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="referencia" class="form-control" placeholder="Nombre Referencia"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="telreferencia" class="form-control" placeholder="Tel Referencia"/>
+                </div>
+               <div class="form-group">
+                  <input type="text" id="tipocliente" class="form-control" placeholder="Tipo Cliente"/>
+                </div>
+                <div class="form-group">
+                  <input type="file" id="image" class="form-control"/>
+                </div>
+                <button class="btn btn-succes" id="registrar">REGISTRAR</button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+      </div>
+  </div> <!-- FIN MODAL registrar -->
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <img class="img-fluid" src="img/Logo-gym.png" alt="">
+        <div class="intro-text">
+          <span class="name"> Inareté Fitness</span>
+          <hr class="star-light">
+          <span class="skills">La música es para el alma lo que la gimnasia para el cuerpo</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="text-center">Galeria de Actividades</h2>
+        <hr class="star-primary">
+        <div class="row">
+          <div class="col-sm-4 portfolio-item">
+            <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/Running.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/Kids.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/Brocoli-blood.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/Tennis-azules.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x" aria-hidden="true"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/Tercera-edad.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x" aria-hidden="true"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/Tecnologia.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+      <div class="container">
+        <h2 class="text-center">Nosotros</h2>
+        <hr class="star-light">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p>Areté Fitness nace con el propósito de mejorar tu calidad de vida a través de la actividad física, ofreciéndote profesionales del sector con amplia experiencia y titulación específica en cada una de las áreas, que se involucrarán contigo compartiendo tus objetivos y haciéndolos suyos para que tu satisfacción sea nuestra mayor recompensa.</p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p>SOMOS LO QUE HACEMOS DIA A DIA.
+               DE MODO QUE LA EXCELENCIA NO ES UN ACTO, SINO UN HÁBITO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="text-center">Contáctenos</h2>
+        <hr class="star-primary">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+            <form name="sentMessage" id="contactForm" novalidate>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Nombre</label>
+                  <input class="form-control" id="Nombre" type="text" placeholder="Nombre" required data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Correo Electrónico</label>
+                  <input class="form-control" id="email" type="Correo" placeholder="Correo Electrónico" required data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Número de Teléfono</label>
+                  <input class="form-control" id="Teléfono" type="tel" placeholder="Número de Teléfono" required data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Mensaje</label>
+                  <textarea class="form-control" id="Mensaje" rows="5" placeholder="Mensaje" required data-validation-required-message="Please enter a Mensaje."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <h3>UBÍQUENOS</h3>
+              <p> San Pedro, Montes de Oca<br>
+                50 Metros Sur de la Plaza de Deportes<br>
+                San Jose, Costa Rica</p>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>BÚSQUENOS EN LA WEB</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="http://wwww.facebook.com/inarete">
+                    <i class="fa fa-fw fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-google-plus"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-dribbble"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>Contáctenos</h3>
+              <p>Escribanos a
+                <a href="mailto:info@inarete.com">info@inareté.com</a> .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              Copyright &copy; INARETÉ 2017
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top d-lg-none">
+      <a class="btn btn-primary js-scroll-trigger" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>INARETÉ</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/portfolio/Tornillos-fuera.jpg" alt="">
+                  <p>
+                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/"></a>.</p>
+                  <ul class="list-inline item-details">
+                    <li>Cliente:
+                      <strong>
+                        <a href="http://startbootstrap.com">INARETÉ</a>
+                      </strong>
+                    </li>
+                    <li>Fecha:
+                      <strong>
+                        <a href="http://startbootstrap.com">Agosto 2017</a>
+                      </strong>
+                    </li>
+                    <li>Servicio:
+                      <strong>
+                        <a href="http://startbootstrap.com">Salud</a>
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>INARETÉ</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/portfolio/ejercicio-dinamico.jpg" alt="">
+                  <p>
+                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/"></a>.</p>
+                  <ul class="list-inline item-details">
+                    <li>Cliente:
+                      <strong>
+                        <a href="http://startbootstrap.com">INARETÉ</a>
+                      </strong>
+                    </li>
+                    <li>Fecha:
+                      <strong>
+                        <a href="http://startbootstrap.com">Agosto 2017</a>
+                      </strong>
+                    </li>
+                    <li>Servicio:
+                      <strong>
+                        <a href="http://startbootstrap.com">Salud</a>
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>INARETÉ</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/portfolio/lazos-rojos.jpg" alt="">
+                  <p>
+                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/"></a>.</p>
+                  <ul class="list-inline item-details">
+                    <li>Cliente:
+                      <strong>
+                        <a href="http://startbootstrap.com">INARETÉ</a>
+                      </strong>
+                    </li>
+                    <li>Fecha:
+                      <strong>
+                        <a href="http://startbootstrap.com">Agosto 2017</a>
+                      </strong>
+                    </li>
+                    <li>Servicio:
+                      <strong>
+                        <a href="http://startbootstrap.com">Salud</a>
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>INARETÉ</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/portfolio/play-station.jpg" alt="">
+                  <p>
+                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/"></a>.</p>
+                  <ul class="list-inline item-details">
+                    <li>Cliente:
+                      <strong>
+                        <a href="http://startbootstrap.com">INARETÉ</a>
+                      </strong>
+                    </li>
+                    <li>Fecha:
+                      <strong>
+                        <a href="http://startbootstrap.com">Agosto 2017</a>
+                      </strong>
+                    </li>
+                    <li>Servicio:
+                      <strong>
+                        <a href="http://startbootstrap.com">Salud</a>
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>INARETÉ</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/portfolio/marihuana-medicinal.jpg" alt="">
+                  <p>
+                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/"></a>.</p>
+                  <ul class="list-inline item-details">
+                    <li>Cliente:
+                      <strong>
+                        <a href="http://startbootstrap.com">INARETÉ</a>
+                      </strong>
+                    </li>
+                    <li>Fecha:
+                      <strong>
+                        <a href="http://startbootstrap.com">Agosto 2017</a>
+                      </strong>
+                    </li>
+                    <li>Servicio:
+                      <strong>
+                        <a href="http://startbootstrap.com">Salud</a>
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>INARETÉ</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/portfolio/chubby.jpg" alt="">
+                  <p>
+                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/"></a>.</p>
+                  <ul class="list-inline item-details">
+                    <li>Cliente:
+                      <strong>
+                        <a href="http://startbootstrap.com">INARETÉ</a>
+                      </strong>
+                    </li>
+                    <li>Fecha:
+                      <strong>
+                        <a href="http://startbootstrap.com">Agosto 2017</a>
+                      </strong>
+                    </li>
+                    <li>Servicio:
+                      <strong>
+                        <a href="http://startbootstrap.com">Salud</a>
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/logicaInterfazRegistrar.js"></script>
+    <script type="text/javascript" src="js/logicaNegociosRegistrar.js"></script>
+    <script type="text/javascript" src="js/LogicaInterfazLogin.js"></script>
+    <script type="text/javascript" src="js/logicaNegociosLogin.js"></script>
+      <script type="text/javascript" src="js/logicaNegociosRegistrar.js"></script>
+
+
+    <!-- Plugin JavaScript -->
+    <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
+
+    <!-- Contact Form JavaScript -->
+   <!--  <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script> -->
+
+    <!-- Custom scripts for this template -->
+    <!-- <script src="js/freelancer.min.js"></script> -->
+
+  </body>
+
+</html>
